@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valideringsskjema</title>
+    <script defer src="src/index.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Registrer deg for å se eksamensoppgavene</h1>
+      <form id="form" class="form">
+        <div class="validering span1">
+          <label for="for_navn">Fornavn: </label>
+          <input type="text" id="for_navn" name="for_navn" />
+          <div class="error"></div>
+        </div>
+        <div class="validering span1">
+          <label for="etter_navn">Etternavn: </label>
+          <input type="text" id="etter_navn" name="etter_navn" />
+          <div class="error"></div>
+        </div>
+        <div class="validering span1">
+          <label for="alder">Alder: </label>
+          <input type="text" id="alder" name="alder" />
+          <div class="error"></div>
+        </div>
+        <div class="validering span1 flex">
+          <h4>Kjønn:</h4>
+          <div class="form-check">
+            <input
+              type="radio"
+              class="form-check-input"
+              name="kjønn"
+              id="kjønn_K"
+            />
+            <label for="kjønn_K">Kvinne</label>
+          </div>
+          <div class="form-check">
+            <input
+              type="radio"
+              class="form-check-input"
+              name="kjønn"
+              id="kjønn_M"
+            />
+            <label for="kjønn_M">Mann</label>
+          </div>
+          <div class="form-check">
+            <input
+              type="radio"
+              class="form-check-input"
+              name="kjønn"
+              id="kjønn_A"
+            />
+            <label for="kjønn_A">Annet</label>
+          </div>
+          <div class="error"></div>
+        </div>
+        <div class="validering span2">
+          <label for="gate_navn">Gatenavn: </label>
+          <input type="text" id="gate_navn" name="gate_navn" />
+          <div class="error"></div>
+        </div>
+        <div class="validering span1">
+          <label for="post_nummer">Postnummer: </label>
+          <input
+            type="text"
+            id="post_nummer"
+            pattern="[0-9]{4}"
+            name="post_nummer"
+          />
+          <div class="error"></div>
+        </div>
+        <div class="validering span1">
+          <label for="post_sted">Poststed: </label>
+          <input type="text" id="post_sted" name="post_sted" />
+          <div class="error"></div>
+        </div>
+        <div class="validering span1">
+          <label for="epost">Epost: </label>
+          <input type="email" id="epost" name="epost" />
+          <div class="error"></div>
+        </div>
+        <div class="validering span1">
+          <label for="epost2">Bekreft epost: </label>
+          <input type="email" id="epost2" name="epost2" />
+          <div class="error"></div>
+        </div>
+        <div class="validering span2">
+          <label for="bruker_navn">Brukernavn: </label>
+          <input type="text" id="bruker_navn" name="bruker_navn" />
+          <div class="error"></div>
+        </div>
+        <div class="validering span1">
+          <label for="passord">Passord: </label>
+          <input type="password" id="passord" name="passord" />
+          <div class="error"></div>
+        </div>
+        <div class="validering span1">
+          <label for="passord2">Bekreft passord: </label>
+          <input type="password" id="passord2" name="passord2" />
+          <div class="error"></div>
+        </div>
+        <div class="validering span2">
+          <input type="submit" value="Registrer" class="btn" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
